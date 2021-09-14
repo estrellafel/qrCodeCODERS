@@ -9,7 +9,7 @@ Logo_link = 'LASO_Crewneck_Design.png' # 'lasoimg.png'
 logo = Image.open(Logo_link)
 
 # taking base width
-basewidth = 200
+basewidth = 100
 
 # adjust image size
 wpercent = (basewidth/float(logo.size[0]))
@@ -20,7 +20,7 @@ QRcode = qrcode.QRCode(
 )
 
 # taking url or text
-url = 'https://docs.google.com/forms/d/1X8HJcUJfFMgQxCVehBnouqHy9AbHf0urFbAFLmFxHPU/edit'
+url = 'https://discord.gg/S4xd5HSR9F'
 
 # addingg URL or text to QRcode
 QRcode.add_data(url)
@@ -41,6 +41,6 @@ pos = ((QRimg.size[0] - logo.size[0]) // 2,
 QRimg.paste(logo, pos)
 
 # save the QR code generated
-QRimg.save('LASO.png')
+QRimg.save('LASO_discord.png')
 
 print('QR code generated!')
